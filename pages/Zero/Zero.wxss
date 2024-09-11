@@ -1,0 +1,9 @@
+/* pages/Zero/Zero.wxss */
+
+
+.image-info {
+  height: 200rpx;
+  width: 200rpx;
+  border-radius: 50%;
+  margin: 280rpx;
+}

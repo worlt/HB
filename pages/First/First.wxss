@@ -1,0 +1,12 @@
+/* pages/First/First.wxss */
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.image {
+  height: 400rpx;
+  width: 600rpx;
+  border-radius: 30rpx;
+  margin: 100rpx 75rpx 75rpx 75rpx;
+}
+

@@ -1,0 +1,13 @@
+<!--pages/Zero/Zero.wxml-->
+<view class="page-container" xmlns:bind="http://www.w3.org/1999/xhtml">
+  <image class="background-image" src="../images/背景图.png"></image>
+  <button class="music" bind:tap="toggleMusic" style="width: 100rpx; height: 100rpx;">
+    <image class="music-image" src="../images/背景图.png"></image>
+  </button>
+
+  <image class="image-info" src="../images/空白图.png"></image>
+
+  <button class="go" bind:tap="goTo" style="width: 100rpx; height: 100rpx;">
+    <image class="go-image" src="../images/背景图.png"></image>
+  </button>
+</view>
