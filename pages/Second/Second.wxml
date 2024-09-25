@@ -1,17 +1,17 @@
-<!-- pages/First/First.wxml -->
+<!-- pages/Second/Second.wxml -->
 <view class="page-container" xmlns:bind="http://www.w3.org/1999/xhtml">
   <view style="position: relative; left: 20rpx; top: 169rpx; text-align: center;">
     <text class="happy" style="position: relative; left: -20rpx; top: -104rpx">Happy Birthday</text>
   </view>
   
-  <image class=" background-image" src="/images/bg4.png"></image>
+  <image class=" background-image" src="/images/bg1.png"></image>
       <button class="music" bind:tap="toggleMusic" style="width: 100rpx; height: 100rpx;">
         <image class="music-image" src="/images/icon2.png"></image>
       </button>
-      <image class="image" bind:tap="chooseImage2" src="{{imagePath2}}" style="position: relative; left: 0rpx; top: -62rpx"></image>
-      <!-- <image class="image" src="/images/空白图.png" style="position: relative; left: 0rpx; top: -41rpx"></image> -->
+      <image class="image" bind:tap="chooseImage3" src="{{imagePath3}}" style="position: relative; left: 0rpx; top: -62rpx" mode="aspectFill"></image>
+      <image class="image" bind:tap="chooseImage4" src="{{imagePath4}}" style="position: relative; left: 0rpx; top: -41rpx" mode="aspectFill"></image>
 
-      <button class="go" bind:tap="goTo" style="width: 100rpx; height: 100rpx; position: relative; left: 0rpx; top: 145rpx">
+      <button class="go" bind:tap="goTo" style="width: 100rpx; height: 100rpx; position: relative; left: 0rpx; top: -424rpx">
         <image class="go-image" src="/images/icon1.png"></image>
       </button>
   </view>

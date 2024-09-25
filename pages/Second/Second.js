@@ -1,4 +1,4 @@
-// pages/Zero/Zero.js
+// pages/Second/Second.js
 const app = getApp()
 Page({
 
@@ -6,24 +6,20 @@ Page({
      * 页面的初始数据
      */
     data: {
-      imagePath1: '/images/p2.png'
+      imagePath3: '/images/p5.png',
+      imagePath4: '/images/p6.png'
     },
 
-    goTo: function() {
+    goTo: function () {
         wx.navigateTo({
-            url: '../First/First',
+            url: '../Third/Third',
             success: function() {
-                console.log("goTo First");
-            },
-        });
+              console.log("go to Third")
+            }
+        })
     },
 
-    toggleMusic: function () {
-        app.toggleMusic();
-    },
-
-
-    chooseImage1: function() {
+    chooseImage3: function() {
       wx.chooseImage({
         count: 1, // 最多可以选择的图片数量
         sizeType: ['compressed'], // 可以指定是原图还是压缩图，默认二者都有
@@ -34,7 +30,7 @@ Page({
           if (tempFilePaths.length > 0) {
             var tempFilePath = tempFilePaths[0];
             this.setData({
-              imagePath1: tempFilePath,
+              imagePath3: tempFilePath,
             });
           }
         },
@@ -45,11 +41,37 @@ Page({
       });
     },
 
+    chooseImage4: function() {
+      wx.chooseImage({
+        count: 1, // 最多可以选择的图片数量
+        sizeType: ['compressed'], // 可以指定是原图还是压缩图，默认二者都有
+        sourceType: ['album', 'camera'], // 可以指定来源是相册还是相机，默认二者都有
+        success: (res) => {
+          // 使用箭头函数确保this指向正确
+          var tempFilePaths = res.tempFilePaths;
+          if (tempFilePaths.length > 0) {
+            var tempFilePath = tempFilePaths[0];
+            this.setData({
+              imagePath4: tempFilePath,
+            });
+          }
+        },
+        fail: function(res) {
+          // 如果选择失败，则输出错误信息
+          console.log('chooseImage fail:', res);
+        }
+      });
+    },
+
+
+    toggleMusic: function () {
+        app.toggleMusic();
+    },
     /**
      * 生命周期函数--监听页面加载
      */
     onLoad(options) {
-      console.log("Zero Page")
+      console.log("Second Page")
     },
 
     /**

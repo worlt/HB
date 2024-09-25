@@ -1,4 +1,4 @@
-// pages/Zero/Zero.js
+// pages/Third/Third.js
 const app = getApp()
 Page({
 
@@ -6,24 +6,10 @@ Page({
      * 页面的初始数据
      */
     data: {
-      imagePath1: '/images/p2.png'
+      imagePath5: '/images/p3.png'
     },
 
-    goTo: function() {
-        wx.navigateTo({
-            url: '../First/First',
-            success: function() {
-                console.log("goTo First");
-            },
-        });
-    },
-
-    toggleMusic: function () {
-        app.toggleMusic();
-    },
-
-
-    chooseImage1: function() {
+    chooseImage5: function() {
       wx.chooseImage({
         count: 1, // 最多可以选择的图片数量
         sizeType: ['compressed'], // 可以指定是原图还是压缩图，默认二者都有
@@ -34,7 +20,7 @@ Page({
           if (tempFilePaths.length > 0) {
             var tempFilePath = tempFilePaths[0];
             this.setData({
-              imagePath1: tempFilePath,
+              imagePath5: tempFilePath,
             });
           }
         },
@@ -45,11 +31,22 @@ Page({
       });
     },
 
+
+    goTo: function () {
+      // wx.navigateTo({
+      //     url: '../First/First',
+      // })
+  },
+
+
+    toggleMusic: function () {
+        app.toggleMusic();
+    },
     /**
      * 生命周期函数--监听页面加载
      */
     onLoad(options) {
-      console.log("Zero Page")
+      console.log("Third Page")
     },
 
     /**

@@ -4,7 +4,9 @@ App({
     // 创建音乐播放器实例
     this.globalData.audioContext = wx.createInnerAudioContext();
     // 设置音乐源
-    this.globalData.audioContext.src = '/music/death_lotto.mp3';
+    this.globalData.audioContext.src = '/music/hb.mp3';
+    // 设置音乐循环播放
+    this.globalData.audioContext.loop = true;
     // 音乐默认是停止状态
     this.globalData.isPlaying = false;
   },
@@ -16,23 +18,25 @@ App({
     if (!this.globalData.isPlaying) {
       this.globalData.audioContext.play();
       this.globalData.isPlaying = true;
-      console.log("play")
+      console.log("play");
     }
   },
   pauseMusic: function() {
     if (this.globalData.isPlaying) {
       this.globalData.audioContext.pause();
       this.globalData.isPlaying = false;
-      console.log("pause")
+      console.log("pause");
     }
   },
-  toggleMusic: function () {
+  toggleMusic: function() {
     console.log("点击音乐");
-      const app = getApp();
-      if (app.globalData.isPlaying) {
-          app.pauseMusic();
-      } else {
-          app.playMusic();
-      }
+    const app = getApp();
+    if (app.globalData.isPlaying) {
+      app.pauseMusic();
+    } else {
+      app.playMusic();
+    }
   },
+
+  
 })

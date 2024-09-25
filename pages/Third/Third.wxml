@@ -1,0 +1,19 @@
+<!--pages/Third/Third.wxml-->
+<view class="page-container" xmlns:bind="http://www.w3.org/1999/xhtml" >
+  <image class="background-image" src="/images/bg1.png"></image>
+  <button class="music" bind:tap="toggleMusic" style="width: 100rpx; height: 100rpx;">
+    <image class="music-image" src="/images/icon2.png"></image>
+  </button>
+  <text class="text1" style="position: relative; left: 142rpx; top: 281rpx">Happy Birthday</text>
+  <!-- <view> -->
+    <!-- <image style="width: 295rpx; height: 179rpx; display: inline-block; box-sizing: border-box; left: 249rpx; top: 322rpx; position: relative" class="hat" src="/images/皇冠1.png" mode=""/>
+  </view> -->
+  
+  <image class="image-info" bind:tap="chooseImage5" src="{{imagePath5}}" mode="aspectFill"></image>
+  <!-- <button class="go" bind:tap="goTo" style="width: 100rpx; height: 100rpx;">
+    <image class="go-image" src="/images/背景图.png"></image>
+  </button> -->
+<view style="padding: 0 40rpx 0 40rpx;">
+  <text class="start"  style="position: relative; left: 5rpx; top: -120rpx">生日快乐呀！新的一岁，也要天天开心。做人最重要就是开心，所以呀拒绝精神内耗，有事直接发疯。愿你的每一天都充满阳光和欢笑，最后，再次祝你生日快乐！</text>
+  </view>
+</view>

@@ -1,4 +1,4 @@
-/* pages/Zero/Zero.wxss */
+/* pages/Third/Third.wxss */
 @import '/style/font.wxss';
 .page-container {
   width: 750rpx;
@@ -23,16 +23,17 @@
 }
 
 .start {
-  font-size: 60rpx;
-  color: fuchsia;
+  font-size: 40rpx;
+  color: #75ecdc;
   font-weight: bolder;
   text-align: center;
   margin-top: 20rpx;
-  width: 750rpx;
-  font-family: "myfont";
+  width: 500rpx;
+  font-family: 'myfont';
   position: relative;
   left: 72rpx;
   top: 8rpx;
+  /* text-decoration: underline; */
 }
 
 .go-image {
@@ -40,4 +41,12 @@
   width: 100rpx;
   border-radius: 50%;
   border: none;
+}
+
+.text1 {
+  font-size: 60rpx;
+  color: fuchsia;
+  font-weight: bolder;
+  text-align: center;
+  font-family: 'myfont';
 }

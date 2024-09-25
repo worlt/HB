@@ -3,13 +3,16 @@
     "pages/Zero/Zero",
     "pages/index/index",
     "pages/logs/logs",
-    "pages/First/First"
+    "pages/First/First",
+    "pages/Second/Second",
+    "pages/Third/Third"
   ],
   "window": {
     "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "Weixin",
+    "navigationBarTitleText": "HB",
     "navigationBarBackgroundColor": "#f7387d"
   },
+  
   "style": "v2",
   "componentFramework": "glass-easel",
   "sitemapLocation": "sitemap.json",

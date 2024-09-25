@@ -1,13 +1,22 @@
 <!--pages/Zero/Zero.wxml-->
-<view class="page-container" xmlns:bind="http://www.w3.org/1999/xhtml">
-  <image class="background-image" src="../images/背景图.png"></image>
+<view class="page-container" xmlns:bind="http://www.w3.org/1999/xhtml" >
+  <image class="background-image" src="/images/bg3.png"></image>
   <button class="music" bind:tap="toggleMusic" style="width: 100rpx; height: 100rpx;">
-    <image class="music-image" src="../images/背景图.png"></image>
+    <image class="music-image" src="/images/icon2.png"></image>
   </button>
-
-  <image class="image-info" src="../images/空白图.png"></image>
+  <text style="font-family: 'myfont'; position: relative; left: 633rpx; top: 127rpx; font-weight: bolder;">m u s i c</text>
+  <text style="font-family: 'myfont'; position: relative; left: 548rpx; top: 1152rpx; font-weight: 700">n e x t</text>
+  <!-- <view>
+    <image style="position: relative; left: 277rpx; top: 170rpx; width: 250rpx; height: 141rpx; display: inline-block; box-sizing: border-box; z-index: 9999" class="hat" src="/images/皇冠1.png" mode=""/>
+  </view> -->
+  
+  <!-- <image class="image-info" src="/images/p1.png" style="position: relative; left: 14rpx; top: -149rpx"></image> -->
+  <image class="image-info" bind:tap="chooseImage1" src="{{imagePath1}}" style="position: relative; left: 14rpx; top: -149rpx"></image>
+  <image style="position: relative; left: 85rpx; top: -341rpx; width: 616rpx; height: 579rpx; display: inline-block; box-sizing: border-box" src="/images/cake.png" mode="aspectFill"/>
 
   <button class="go" bind:tap="goTo" style="width: 100rpx; height: 100rpx;">
-    <image class="go-image" src="../images/背景图.png"></image>
+    <image class="go-image" src="/images/icon1.png"></image>
   </button>
+
+  <text class="start"  style="position: relative; left: 159rpx; top: -1332rpx">Happy Birthday</text>
 </view>
