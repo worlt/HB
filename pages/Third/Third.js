@@ -6,7 +6,7 @@ Page({
      * 页面的初始数据
      */
     data: {
-      imagePath5: '/images/p3.png'
+      imagePath5: '/images/空白图.png'
     },
 
     chooseImage5: function() {

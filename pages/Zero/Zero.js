@@ -6,7 +6,7 @@ Page({
      * 页面的初始数据
      */
     data: {
-      imagePath1: '/images/p2.png'
+      imagePath1: '/images/空白图.png'
     },
 
     goTo: function() {

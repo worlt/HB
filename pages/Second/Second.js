@@ -6,8 +6,8 @@ Page({
      * 页面的初始数据
      */
     data: {
-      imagePath3: '/images/p5.png',
-      imagePath4: '/images/p6.png'
+      imagePath3: '/images/空白图.png',
+      imagePath4: '/images/空白图.png'
     },
 
     goTo: function () {

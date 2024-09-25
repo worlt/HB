@@ -7,7 +7,7 @@ Page({
    */
   data: {
     showImages: false, // 初始不显示图片
-    imagePath2: '/images/p4.png'
+    imagePath2: '/images/空白图.png'
   },
   onLoad: function () {
     // 延迟触发动画，这里以页面加载完成为例
